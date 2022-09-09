@@ -22,29 +22,30 @@ function App() {
 export default App;
 
 const HeroContainer = styled.div`
-  display: flex;
-  flex-direction: column;
   width: 58%;
-  align-items: center;
-  justify-content: flex-start;
   height: 838px;
   opacity: 1;
+  display: flex;
   transition: opacity 1.8s ease-in 50ms;
-  background-color: black;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
 `;
 
 const Container = styled.div`
-  flex-direction: column;
-  display: flex;
-  align-items: center;
   width: 100%;
   height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: column;
 `;
 
 const InfoContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: red;
+  /* background-color: cadetblue; */
 `;
+
 
