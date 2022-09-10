@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import "./App.css";
 
+import Brands from "./components/brands";
 import Header from "./components/header";
 import HeroInfo from "./components/heroInfo";
 
@@ -14,6 +15,9 @@ function App() {
         <InfoContainer>
           <HeroInfo />
         </InfoContainer>
+      </HeroContainer>
+      <HeroContainer>
+        <Brands />
       </HeroContainer>
     </Container>
   );
@@ -30,6 +34,7 @@ const HeroContainer = styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
+  padding: 0 0 110px;
 `;
 
 const Container = styled.div`
@@ -47,5 +52,3 @@ const InfoContainer = styled.div`
   justify-content: center;
   /* background-color: cadetblue; */
 `;
-
-

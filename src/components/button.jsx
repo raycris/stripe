@@ -9,7 +9,7 @@ const Button = ({ ...props }) => {
   return (
     <Container kind={props.kind}>
       <Label>{props.title}</Label>
-      <Icon src={AnguloSVG} hoverIcon={props.HoverIcon}/>
+      <Icon src={AnguloSVG} />
     </Container>
   );
 };
@@ -26,7 +26,9 @@ const Container = styled.button`
   border-radius: 68px;
   justify-content: space-around;
   background-color: ${(props) =>
-    props.kind === "outline" ? "transparent" : `${theme.color.primary}`};
+    props.kind === "outline"
+      ? `${theme.color.white}`
+      : `${theme.color.primary}`};
   &:hover {
     opacity: 0.8;
   }
@@ -34,7 +36,9 @@ const Container = styled.button`
 
 const Label = styled.p`
   color: ${(props) =>
-    props.kind === "outline" ? `${theme.color.primary}` : `${theme.color.white}`};
+    props.kind === "outline"
+      ? `${theme.color.primary}`
+      : `${theme.color.white}`};
   font-size: ${theme.fontSize.small};
   text-align: center;
   font-weight: 500;
@@ -43,4 +47,4 @@ const Label = styled.p`
 const Icon = styled.img`
   width: 10px;
   height: 10px;
-`
+`;

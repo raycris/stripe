@@ -21,7 +21,7 @@ const HeroInfo = () => {
         </DescripContainer>
         <ButtonContainer>
           <Button title="Start now" />
-          <Button kind="outline" title="Contact sales"  />
+          <Button title="Contact sales" kind="outline" />
         </ButtonContainer>
       </LabelContainer>
       <Phone />

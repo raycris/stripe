@@ -9,11 +9,6 @@ const HeaderChart = () => {
   return (
     <Container>
       <HeaderContainer>
-        {/* <HeaderContainer>
-
-        <BallIcon style={{marginRight:8}} />
-        <Label style={{marginRight:8}}>ROCKET RIDES</Label>
-        </HeaderContainer> */}
         <ImageBackground src={Search} />
       </HeaderContainer>
       <picture>
@@ -51,9 +46,10 @@ const Container = styled.div`
 `;
 
 const ImageBackground = styled.img`
+  width: 100%;
+  margin-left: 10px;
   border-radius: 8px;
   margin-bottom: 6px;
-  width: 100%;
 `;
 
 const HeaderContainer = styled.span`
