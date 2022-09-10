@@ -30,11 +30,11 @@ const HeroContainer = styled.div`
   height: 838px;
   opacity: 1;
   display: flex;
+  padding: 0 0 110px;
   transition: opacity 1.8s ease-in 50ms;
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 0 0 110px;
 `;
 
 const Container = styled.div`
@@ -50,5 +50,4 @@ const InfoContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: cadetblue; */
 `;
