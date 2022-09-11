@@ -20,6 +20,8 @@ function App() {
       </HeroContainer>
       <HeroContainer>
         <Brands />
+      </HeroContainer>
+      <HeroContainer>
         <PaymentProducts/>
       </HeroContainer>
     </Container>
@@ -35,9 +37,8 @@ const HeroContainer = styled.div`
   display: flex;
   padding: 0 0 110px;
   transition: opacity 1.8s ease-in 50ms;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
-  justify-content: flex-start;
 `;
 
 const Container = styled.div`

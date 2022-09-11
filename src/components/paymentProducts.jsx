@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import theme from "../lib/themes";
+import Button from "./button";
 
 const PaymentProducts = () => {
   return (
@@ -26,6 +27,14 @@ const PaymentProducts = () => {
           more.
         </Description>
       </DescriptionContainer>
+      <ButtonContainer>
+        <Button
+          title="Start with payment"
+          backgroundColor={theme.color.purpure}
+          colorLabel={theme.color.white}
+        />
+        <></>
+      </ButtonContainer>
     </Container>
   );
 };
@@ -33,8 +42,8 @@ const PaymentProducts = () => {
 export default PaymentProducts;
 
 const Container = styled.section`
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
 `;
 
 const Subtitle = styled.h2`
@@ -43,22 +52,26 @@ const Subtitle = styled.h2`
 `;
 
 const Title = styled.h1`
-  font-size: 3.8rem;
   color: ${theme.color.primary};
   width: 508px;
+  font-size: 3.8rem;
 `;
 
 const Description = styled.p`
-  font-size: ${theme.fontSize.base};
   color: ${theme.color.primary};
   width: 492px;
+  font-size: ${theme.fontSize.base};
 `;
 const DescriptionLink = styled.a`
-  font-size: ${theme.fontSize.base};
   color: ${theme.color.purpure};
+  font-size: ${theme.fontSize.base};
 `;
 const DescriptionContainer = styled.span`
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+`;
+const ButtonContainer = styled.span`
+  display: flex;
+  justify-content: flex-start;
 `;
