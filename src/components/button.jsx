@@ -1,15 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 import theme from "../lib/themes";
 
 import AnguloSVG from "../assets/icons/angulo-derecho.svg";
+import ArrowSVG from "../assets/icons/flecha-derecha.svg";
 
 const Button = ({ ...props }) => {
+  const [isHover, setIsHover] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHover(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHover(false);
+  };
   return (
-    <Container kind={props.kind} backgroundColor={props.backgroundColor}>
+    <Container
+      backgroundColor={props.backgroundColor}
+      onMouseEnter={handleMouseEnter}
+      onMouseOut={handleMouseLeave}
+    >
       <Label colorLabel={props.colorLabel}>{props.title}</Label>
-      <Icon src={AnguloSVG} />
+      <Icon src={isHover ? ArrowSVG : AnguloSVG} />
     </Container>
   );
 };
