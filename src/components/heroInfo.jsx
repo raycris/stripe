@@ -20,8 +20,16 @@ const HeroInfo = () => {
           </Description>
         </DescripContainer>
         <ButtonContainer>
-          <Button title="Start now" />
-          <Button title="Contact sales" kind="outline" />
+          <Button
+            title="Start now"
+            backgroundColor={theme.color.primary}
+            colorLabel={theme.color.white}
+          />
+          <Button
+            title="Contact sales"
+            backgroundColor={theme.color.white}
+            colorLabel={theme.color.primary}
+          />
         </ButtonContainer>
       </LabelContainer>
       <Phone />
