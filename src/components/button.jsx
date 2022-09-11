@@ -7,8 +7,8 @@ import AnguloSVG from "../assets/icons/angulo-derecho.svg";
 
 const Button = ({ ...props }) => {
   return (
-    <Container kind={props.kind}>
-      <Label>{props.title}</Label>
+    <Container kind={props.kind} backgroundColor={props.backgroundColor}>
+      <Label colorLabel={props.colorLabel}>{props.title}</Label>
       <Icon src={AnguloSVG} />
     </Container>
   );
@@ -25,20 +25,14 @@ const Container = styled.button`
   align-items: center;
   border-radius: 68px;
   justify-content: space-around;
-  background-color: ${(props) =>
-    props.kind === "outline"
-      ? `${theme.color.white}`
-      : `${theme.color.primary}`};
+  background-color: ${(props) => `${props.backgroundColor}`};
   &:hover {
     opacity: 0.8;
   }
 `;
 
 const Label = styled.p`
-  color: ${(props) =>
-    props.kind === "outline"
-      ? `${theme.color.primary}`
-      : `${theme.color.white}`};
+  color: ${(props) => `${props.colorLabel}`};
   font-size: ${theme.fontSize.small};
   text-align: center;
   font-weight: 500;
