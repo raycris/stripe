@@ -4,6 +4,7 @@ import theme from "../lib/themes";
 import Button from "./button";
 
 import Phone from "./phone";
+import PhoneImage from "../assets/images/phone.png";
 
 const HeroInfo = () => {
   return (
@@ -32,7 +33,7 @@ const HeroInfo = () => {
           />
         </ButtonContainer>
       </LabelContainer>
-      <Phone />
+      <Phone img={PhoneImage} />
     </Container>
   );
 };
