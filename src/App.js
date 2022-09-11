@@ -6,6 +6,8 @@ import "./App.css";
 import Brands from "./components/brands";
 import Header from "./components/header";
 import HeroInfo from "./components/heroInfo";
+import PaymentProducts from "./components/paymentProducts";
+
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
       </HeroContainer>
       <HeroContainer>
         <Brands />
+        <PaymentProducts/>
       </HeroContainer>
     </Container>
   );

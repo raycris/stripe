@@ -33,7 +33,7 @@ const Label = styled.a`
   margin: 10px;
   padding: 10px 20px;
   font-size: 1.5rem;
-  &:hover{
+  &:hover {
     opacity: 0.5;
   }
 `;
@@ -48,7 +48,7 @@ const LogoButton = styled.a`
   padding: 4px;
   font-size: 2rem;
   font-weight: bolder;
-  &:hover{
+  &:hover {
     opacity: 0.5;
   }
 `;
@@ -61,7 +61,7 @@ const SignInButton = styled.a`
   cursor: pointer;
   display: flex;
   font-size: 1.4rem;
-  background: #FFFFFF33;
+  background: ${theme.color.transparent};
   align-items: center;
   border-radius: 16px;
   justify-content: space-between;
