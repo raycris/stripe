@@ -1,7 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+
 import theme from "../lib/themes";
+
 import Button from "./button";
+import CreditCard from "./creditCard";
+import PayMethodChart from "./payMethodChart";
 
 const PaymentProducts = () => {
   return (
@@ -35,6 +39,10 @@ const PaymentProducts = () => {
         />
         <></>
       </ButtonContainer>
+      <ImageContainer>
+        <CreditCard/>
+        <PayMethodChart/>
+      </ImageContainer>
     </Container>
   );
 };
@@ -73,5 +81,14 @@ const DescriptionContainer = styled.span`
 `;
 const ButtonContainer = styled.span`
   display: flex;
+  margin-bottom: 50px;
   justify-content: flex-start;
+`;
+
+const ImageContainer = styled.div`
+  display: grid;
+  gap: 1rem;
+
+  grid-auto-flow: column;
+  margin: 0 0 1rem 0;
 `;
