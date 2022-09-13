@@ -5,6 +5,9 @@ import theme from "../lib/themes";
 
 import Button from "./button";
 import CreditCard from "./creditCard";
+import PaymentFraudChart from "./paymentFraudChart";
+import PaymentMethodPhone from "./paymentMethodPhone";
+import PaymentObject from "./paymentObject";
 import PayMethodChart from "./payMethodChart";
 
 const PaymentProducts = () => {
@@ -40,8 +43,17 @@ const PaymentProducts = () => {
         <></>
       </ButtonContainer>
       <ImageContainer>
-        <CreditCard/>
-        <PayMethodChart/>
+        <div>
+          <CreditCard />
+        </div>
+        <div style={{width: "500px"}}>
+          <PayMethodChart />
+        </div>
+        <div>
+          <PaymentObject />
+        </div>
+          <PaymentMethodPhone />
+        <PaymentFraudChart />
       </ImageContainer>
     </Container>
   );
@@ -76,8 +88,8 @@ const DescriptionLink = styled.a`
 `;
 const DescriptionContainer = styled.span`
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
 `;
 const ButtonContainer = styled.span`
   display: flex;
@@ -87,8 +99,10 @@ const ButtonContainer = styled.span`
 
 const ImageContainer = styled.div`
   display: grid;
-  gap: 1rem;
-
-  grid-auto-flow: column;
-  margin: 0 0 1rem 0;
+  gap: 2rem;
+  /* padding: 10px; */
+  justify-content: flex-start;
+  /* grid-auto-rows: 400px; */
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: red;
 `;
