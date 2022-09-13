@@ -46,7 +46,7 @@ const PaymentProducts = () => {
         <div>
           <CreditCard />
         </div>
-        <div style={{width: "500px"}}>
+        <div >
           <PayMethodChart />
         </div>
         <div>
@@ -99,10 +99,10 @@ const ButtonContainer = styled.span`
 
 const ImageContainer = styled.div`
   display: grid;
-  gap: 2rem;
-  /* padding: 10px; */
-  justify-content: flex-start;
-  /* grid-auto-rows: 400px; */
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 4rem;
+  align-items: center;
+  grid-template-columns: 1fr 500px 1fr;
+  grid-template-rows: 1fr  480px;
   background-color: red;
 `;
+
