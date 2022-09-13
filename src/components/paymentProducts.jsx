@@ -103,6 +103,5 @@ const ImageContainer = styled.div`
   align-items: center;
   grid-template-columns: 1fr 500px 1fr;
   grid-template-rows: 1fr  480px;
-  background-color: red;
 `;
 
