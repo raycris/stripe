@@ -99,9 +99,9 @@ const ButtonContainer = styled.span`
 
 const ImageContainer = styled.div`
   display: grid;
-  grid-column-gap: 4rem;
   align-items: center;
-  grid-template-columns: 1fr 500px 1fr;
+  grid-column-gap: 4rem;
   grid-template-rows: 1fr  480px;
+  grid-template-columns: 1fr 500px 1fr;
 `;
 

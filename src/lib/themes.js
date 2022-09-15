@@ -6,8 +6,8 @@ const theme = {
     primary: "#0a2540",
     transparent: "#FFFFFF33;",
     purpure: "#635bff",
-    yellow: "#ffc026",
-    turkeyBlue: "#0acbcb",
+    lightBlue: "#00d4ff",
+    gray: "#adbdcc",
   },
   fontSize: {
     base: "1.8rem",

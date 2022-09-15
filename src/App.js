@@ -4,26 +4,39 @@ import styled from "styled-components";
 import "./App.css";
 
 import Brands from "./components/brands";
+import DevelopersForDesigned from "./components/developersForDesigned";
 import Header from "./components/header";
 import HeroInfo from "./components/heroInfo";
 import PaymentProducts from "./components/paymentProducts";
+import theme from "./lib/themes";
+
 
 
 function App() {
   return (
     <Container>
+
       <HeroContainer>
         <Header />
         <InfoContainer>
           <HeroInfo />
         </InfoContainer>
       </HeroContainer>
+
       <HeroContainer>
         <Brands />
       </HeroContainer>
+
       <HeroContainer>
         <PaymentProducts/>
       </HeroContainer>
+
+
+      <MyCOntainer style={{background: `${theme.color.primary}`}}>
+        <DevelopersForDesigned/>
+      </MyCOntainer>
+
+
     </Container>
   );
 }
@@ -55,3 +68,11 @@ const InfoContainer = styled.div`
   align-items: center;
   justify-content: center;
 `;
+
+const MyCOntainer = styled.div`
+margin-top: 600px;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+`
