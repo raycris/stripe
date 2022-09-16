@@ -179,6 +179,7 @@ const SubDescriptionContainer = styled.div`
   width: 190px;
   height: 72px;
   font-size: ${theme.fontSize.small};
+  margin-top: 8px;
   padding-right: 14px;
 `;
 

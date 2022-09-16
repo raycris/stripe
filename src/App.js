@@ -8,6 +8,7 @@ import DevelopersForDesigned from "./components/developersForDesigned";
 import Header from "./components/header";
 import HeroInfo from "./components/heroInfo";
 import PaymentProducts from "./components/paymentProducts";
+import WhyStripe from "./components/whyStripe";
 import theme from "./lib/themes";
 
 
@@ -35,6 +36,10 @@ function App() {
       <MyCOntainer style={{background: `${theme.color.primary}`}}>
         <DevelopersForDesigned/>
       </MyCOntainer>
+
+      <HeroContainer>
+        <WhyStripe/>
+      </HeroContainer>
 
 
     </Container>

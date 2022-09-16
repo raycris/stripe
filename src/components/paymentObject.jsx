@@ -14,13 +14,12 @@ const PaymentObject = () => {
 export default PaymentObject;
 
 const Container = styled.div`
-  /* height: 662px; */
   padding: 5px;
   width: 256px;
   height: 490px;
-  border-radius: 40px;
   display: flex;
   align-items: center;
+  border-radius: 40px;
   justify-content: center;
   background: #18324b;
   box-shadow: 0 2px 6px 1px #0a2540, inset 0 -5px 2px 1px #0a2540,
