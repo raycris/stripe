@@ -19,7 +19,6 @@ const PaymentMethodPhone = () => {
     return () => clearInterval(intervalId);
   }, []);
   return (
-    
     <Container>
       <ImageBackground src={currentImage} alt="User payment information" />
     </Container>

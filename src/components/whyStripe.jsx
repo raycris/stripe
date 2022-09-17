@@ -93,8 +93,8 @@ const WhyStripe = () => {
 export default WhyStripe;
 
 const Container = styled.section`
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
 `;
 
 const Line = styled.span`
