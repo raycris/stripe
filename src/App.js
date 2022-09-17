@@ -3,20 +3,22 @@ import styled from "styled-components";
 
 import "./App.css";
 
+import theme from "./lib/themes";
+
 import Brands from "./components/brands";
 import DevelopersForDesigned from "./components/developersForDesigned";
+import GlobalScale from "./components/globalScale";
 import Header from "./components/header";
 import HeroInfo from "./components/heroInfo";
 import PaymentProducts from "./components/paymentProducts";
 import WhyStripe from "./components/whyStripe";
-import theme from "./lib/themes";
 
-
+import World1 from "./assets/images/world1.png";
+import World2 from "./assets/images/world2.gif";
 
 function App() {
   return (
     <Container>
-
       <HeroContainer>
         <Header />
         <InfoContainer>
@@ -29,19 +31,23 @@ function App() {
       </HeroContainer>
 
       <HeroContainer>
-        <PaymentProducts/>
+        <PaymentProducts />
       </HeroContainer>
 
-
-      <MyCOntainer style={{background: `${theme.color.primary}`}}>
-        <DevelopersForDesigned/>
+      <MyCOntainer>
+        <DevelopersForDesigned />
       </MyCOntainer>
 
       <HeroContainer>
-        <WhyStripe/>
+        <WhyStripe />
       </HeroContainer>
 
-
+      <MyCOntainer>
+        <GlobalScale />
+        <ImageContainer>
+          <Imagen src={World2} alt="world" />
+        </ImageContainer>
+      </MyCOntainer>
     </Container>
   );
 }
@@ -75,9 +81,24 @@ const InfoContainer = styled.div`
 `;
 
 const MyCOntainer = styled.div`
-margin-top: 600px;
-width: 100%;
-display: flex;
-align-items: center;
-justify-content: center;
-`
+  margin-top: 600px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: ${theme.color.primary};
+`;
+
+const ImageContainer = styled.picture`
+  /* z-index: -1; */
+  border: 1px solid red;
+  width: 200px;
+  height: 100%;
+  `;
+
+const Imagen = styled.img`
+object-fit: contain;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+`;

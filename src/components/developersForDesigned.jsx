@@ -108,15 +108,16 @@ const DevelopersForDesigned = () => {
 
 export default DevelopersForDesigned;
 
+const InfoContainer = styled.div`
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr;
+`;
+
 const Container = styled.section`
   display: flex;
   padding-left: 18px;
   flex-direction: column;
-`;
-
-const InfoContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 `;
 
 const Subtitle = styled.h2`
