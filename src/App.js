@@ -13,7 +13,6 @@ import HeroInfo from "./components/heroInfo";
 import PaymentProducts from "./components/paymentProducts";
 import WhyStripe from "./components/whyStripe";
 
-import World1 from "./assets/images/world1.png";
 import World2 from "./assets/images/world2.gif";
 
 function App() {
@@ -34,7 +33,7 @@ function App() {
         <PaymentProducts />
       </HeroContainer>
 
-      <MyCOntainer>
+      <MyCOntainer style={{marginTop: "600px"}}>
         <DevelopersForDesigned />
       </MyCOntainer>
 
@@ -81,7 +80,6 @@ const InfoContainer = styled.div`
 `;
 
 const MyCOntainer = styled.div`
-  margin-top: 600px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -90,15 +88,11 @@ const MyCOntainer = styled.div`
 `;
 
 const ImageContainer = styled.picture`
-  /* z-index: -1; */
-  border: 1px solid red;
-  width: 200px;
-  height: 100%;
-  `;
+  width: auto;
+  height: auto;
+`;
 
 const Imagen = styled.img`
-object-fit: contain;
-  height: 100%;
   width: 100%;
-  z-index: -1;
+  height: 100%;
 `;

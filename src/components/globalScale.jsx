@@ -3,8 +3,6 @@ import styled from "styled-components";
 
 import theme from "../lib/themes";
 
-
-
 const array = [
   {
     id: 1,
@@ -31,7 +29,6 @@ const array = [
 const GlobalScale = () => {
   return (
     <Container>
-
       <ParentContainer>
         <Subtitle>Global scale</Subtitle>
         <Title>The backbone for internet business</Title>
@@ -45,21 +42,18 @@ const GlobalScale = () => {
           </MainDescription>
           <SubInfo>
             {array.map((item) => (
-              <CardContainer key={item.id}>
+              <InfoContainer key={item.id}>
                 <TitleContainer>
                   <Line>
                     <Label>{item.title}</Label>
                   </Line>
                 </TitleContainer>
                 <Description>{item.description}</Description>
-              </CardContainer>
+              </InfoContainer>
             ))}
           </SubInfo>
         </InfoContainer>
       </ParentContainer>
-
-      
-      
     </Container>
   );
 };
@@ -67,12 +61,12 @@ const GlobalScale = () => {
 export default GlobalScale;
 
 const Container = styled.section`
-  display: flex;
   width: 58%;
+  display: flex;
 `;
 const ParentContainer = styled.section`
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
 `;
 
 const Line = styled.span`
@@ -86,12 +80,14 @@ const Line = styled.span`
 const Subtitle = styled.h2`
   color: ${theme.color.lightBlue};
   font-size: ${theme.fontSize.base};
+  padding-left: 22px;
 `;
 
 const Title = styled.h1`
   color: ${theme.color.white};
   width: 740px;
   font-size: 3.8rem;
+  padding-left: 22px;
 `;
 
 const Label = styled.h1`
@@ -106,23 +102,16 @@ const InfoContainer = styled.div`
   flex-direction: column;
 `;
 
-const CardContainer = styled.section`
-  display: flex;
-  flex-direction: column;
-`;
-
 const MainDescription = styled.p`
   color: ${theme.color.gray};
   width: 492px;
   font-size: ${theme.fontSize.base};
+  padding-left: 22px;
 `;
 
 const Description = styled.div`
   color: ${theme.color.darkGray};
-  height: 72px;
-  padding: 0 14px;
   font-size: ${theme.fontSize.normal};
-  text-align: justify;
   margin-top: 8px;
 `;
 
@@ -137,10 +126,9 @@ const DescriptionLink = styled.a`
 `;
 
 const SubInfo = styled.div`
-  display: grid;
   gap: 6px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: grid;
   padding: 16px;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 `;
-
-
