@@ -22,14 +22,18 @@ const HeroInfo = () => {
         </DescripContainer>
         <ButtonContainer>
           <Button
-            title="Start now"
             backgroundColor={theme.color.primary}
             colorLabel={theme.color.white}
+            hoverColor={theme.color.primary}
+            opacity={true}
+            title="Start now"
           />
           <Button
-            title="Contact sales"
             backgroundColor={theme.color.white}
             colorLabel={theme.color.primary}
+            hoverColor={theme.color.white}
+            opacity={true}
+            title="Contact sales"
           />
         </ButtonContainer>
       </LabelContainer>

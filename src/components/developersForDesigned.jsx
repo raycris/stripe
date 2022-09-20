@@ -46,6 +46,8 @@ const DevelopersForDesigned = () => {
         <ButtonContainer>
           <Button
             title="Read the docs"
+            opacity={false}
+            hoverColor={theme.color.white}
             backgroundColor={theme.color.lightBlue}
             colorLabel={theme.color.primary}
           />
