@@ -8,7 +8,8 @@ const theme = {
     purpure: "#635bff",
     lightBlue: "#00d4ff",
     gray: "#adbdcc",
-    darkGray: "#425466"
+    darkGray: "#425466",
+    backgroundGray: "#f6f9fc"
   },
   fontSize: {
     base: "1.8rem",

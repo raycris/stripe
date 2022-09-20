@@ -37,6 +37,8 @@ const PaymentProducts = () => {
       <ButtonContainer>
         <Button
           title="Start with payment"
+          opacity={false}
+            hoverColor={theme.color.primary}
           backgroundColor={theme.color.purpure}
           colorLabel={theme.color.white}
         />

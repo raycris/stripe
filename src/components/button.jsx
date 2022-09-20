@@ -19,6 +19,8 @@ const Button = ({ ...props }) => {
   return (
     <Container
       backgroundColor={props.backgroundColor}
+      opacity={props.props}
+      hoverColor={props.hoverColor}
       onMouseEnter={handleMouseEnter}
       onMouseOut={handleMouseLeave}
     >
@@ -41,7 +43,8 @@ const Container = styled.button`
   justify-content: space-around;
   background-color: ${(props) => `${props.backgroundColor}`};
   &:hover {
-    opacity: 0.8;
+    opacity: ${(props) => (`${props.opacity}` === true ? 0.5 : 1)};
+    background-color: ${(props) => `${props.hoverColor}`};
   }
 `;
 
