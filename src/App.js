@@ -15,6 +15,7 @@ import VirtualEvent from "./components/virtualEvent";
 import WhyStripe from "./components/whyStripe";
 
 import World2 from "./assets/images/world2.gif";
+import ReadyToStarted from "./components/readyToStarted";
 
 function App() {
   return (
@@ -54,6 +55,10 @@ function App() {
       <Grayntainer>
         <VirtualEvent />
       </Grayntainer>
+
+      <HeroContainer>
+        <ReadyToStarted/>
+      </HeroContainer>
     </Container>
   );
 }
