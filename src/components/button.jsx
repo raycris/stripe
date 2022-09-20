@@ -24,7 +24,12 @@ const Button = ({ ...props }) => {
       onMouseEnter={handleMouseEnter}
       onMouseOut={handleMouseLeave}
     >
-      <Label colorLabel={props.colorLabel}>{props.title}</Label>
+      <Label
+        colorLabel={props.colorLabel}
+        hoverLabelColor={props.hoverLabelColor}
+      >
+        {props.title}
+      </Label>
       <Icon src={isHover ? ArrowSVG : AnguloSVG} />
     </Container>
   );
@@ -43,7 +48,7 @@ const Container = styled.button`
   justify-content: space-around;
   background-color: ${(props) => `${props.backgroundColor}`};
   &:hover {
-    opacity: ${(props) => (`${props.opacity}` === true ? 0.5 : 1)};
+    opacity: ${(props) => (`${props.opacity}` ? 0.8 : 1)};
     background-color: ${(props) => `${props.hoverColor}`};
   }
 `;
@@ -52,7 +57,13 @@ const Label = styled.p`
   color: ${(props) => `${props.colorLabel}`};
   font-size: ${theme.fontSize.small};
   text-align: center;
-  font-weight: 500;
+  font-weight: bold;
+  &:hover {
+    color: ${(props) =>
+      `${props.hoverLabelColor}`
+        ? `${theme.color.primary}`
+        : `${props.colorLabel}`};
+  }
 `;
 
 const Icon = styled.img`

@@ -39,9 +39,9 @@ const VirtualEvent = () => {
 export default VirtualEvent;
 
 const Container = styled.div`
+  margin: 0 200px;
   display: flex;
   justify-content: center;
-  margin: 0 200px;
 `;
 
 const InfoContainer = styled.div`
@@ -66,8 +66,6 @@ const Description = styled.div`
   height: 72px;
   padding: 0 14px;
   font-size: ${theme.fontSize.normal};
-  /* text-align: justify; */
-  /* margin-top: 8px; */
 `;
 
 const ButtonContainer = styled.span`
