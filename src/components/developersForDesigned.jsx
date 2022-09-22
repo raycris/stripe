@@ -45,11 +45,11 @@ const DevelopersForDesigned = () => {
         </DescriptionContainer>
         <ButtonContainer>
           <Button
+            colorLabel={theme.color.primary}
+            backgroundColor={theme.color.lightBlue}
+            hoverColor={theme.color.white}
             title="Read the docs"
             opacity={false}
-            hoverColor={theme.color.white}
-            backgroundColor={theme.color.lightBlue}
-            colorLabel={theme.color.primary}
           />
           <></>
         </ButtonContainer>

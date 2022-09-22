@@ -5,17 +5,18 @@ import "./App.css";
 
 import theme from "./lib/themes";
 
+import World2 from "./assets/images/world2.gif";
+
 import Brands from "./components/brands";
 import DevelopersForDesigned from "./components/developersForDesigned";
+import Footer from "./components/footer";
 import GlobalScale from "./components/globalScale";
 import Header from "./components/header";
 import HeroInfo from "./components/heroInfo";
 import PaymentProducts from "./components/paymentProducts";
+import ReadyToStarted from "./components/readyToStarted";
 import VirtualEvent from "./components/virtualEvent";
 import WhyStripe from "./components/whyStripe";
-
-import World2 from "./assets/images/world2.gif";
-import ReadyToStarted from "./components/readyToStarted";
 
 function App() {
   return (
@@ -57,8 +58,12 @@ function App() {
       </Grayntainer>
 
       <HeroContainer>
-        <ReadyToStarted/>
+        <ReadyToStarted />
       </HeroContainer>
+
+      <Grayntainer style={{ height: "100%", padding: "320px 0px 128px" }}>
+        <Footer />
+      </Grayntainer>
     </Container>
   );
 }
