@@ -44,10 +44,9 @@ const ReadyToStarted = () => {
               title="Start now"
             />
             <Button
+              hoverLabelColor
               backgroundColor={theme.color.white}
               colorLabel={theme.color.purpure}
-              // hoverColor={theme.color.primary}
-              hoverLabelColor
               opacity={false}
               title="Contact sales"
             />
@@ -68,9 +67,9 @@ const ReadyToStarted = () => {
             <CardDescription>{item.description}</CardDescription>
             <ButtonContainer>
               <Button
+                hoverLabelColor
                 backgroundColor={theme.color.white}
                 colorLabel={theme.color.purpure}
-                hoverLabelColor
                 opacity={false}
                 title={item.buttonLabel}
               />
@@ -108,8 +107,6 @@ const Label = styled.h1`
   font-size: ${theme.fontSize.small};
   font-weight: bold;
   padding-left: 14px;
-  /* background-color: red; */
-  /* width: 100%; */
 `;
 
 const InfoContainer = styled.div`
@@ -120,25 +117,23 @@ const InfoContainer = styled.div`
 
 const CardContainer = styled.section`
   display: flex;
-  /* background-color: red; */
   margin-right: 20px;
-  justify-content: space-between;
   flex-direction: column;
+  justify-content: space-between;
 `;
 
 const Description = styled.div`
   color: ${theme.color.darkGray};
-  height: 72px;
   width: 60%;
+  height: 72px;
   font-size: ${theme.fontSize.normal};
-  /* text-align: justify; */
   margin-top: 8px;
+  margin-bottom: 20px;
 `;
 const CardDescription = styled.div`
   color: ${theme.color.darkGray};
   height: 72px;
   font-size: ${theme.fontSize.normal};
-  /* text-align: justify; */
   margin-top: 12px;
 `;
 
@@ -163,7 +158,6 @@ const ButtonContainer = styled.div`
   margin-top: 18px;
   align-items: center;
   /* background-color: red; */
-  /* justify-content: space-between; */
 `;
 
 
