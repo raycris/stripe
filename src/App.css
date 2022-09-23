@@ -6,6 +6,10 @@ html {
   font-size: 62.5%;
 }
 
+:root {
+  --gradient: linear-gradient(45deg, #6ec3f4, #3a3aff, #ff61ab, #e63946);
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

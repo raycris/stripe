@@ -26,7 +26,6 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: red;
 `;
 const Label = styled.a`
   color: ${theme.color.white};

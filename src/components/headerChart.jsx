@@ -12,9 +12,8 @@ const HeaderChart = () => {
         <ImageBackground src={Search} />
       </HeaderContainer>
       <picture>
-
-      <ImageBackground src={Chart1} />
-      <ImageBackground src={Chart2} />
+        <ImageBackground src={Chart1} />
+        <ImageBackground src={Chart2} />
       </picture>
     </Container>
   );

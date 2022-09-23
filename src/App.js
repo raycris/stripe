@@ -21,12 +21,14 @@ import WhyStripe from "./components/whyStripe";
 function App() {
   return (
     <Container>
-      <HeroContainer>
-        <Header />
-        <InfoContainer>
-          <HeroInfo />
-        </InfoContainer>
-      </HeroContainer>
+      <BackGroundGradient>
+        <HeroContainer>
+          <Header />
+          <InfoContainer>
+            <HeroInfo />
+          </InfoContainer>
+        </HeroContainer>
+      </BackGroundGradient>
 
       <HeroContainer>
         <Brands />
@@ -69,6 +71,26 @@ function App() {
 }
 
 export default App;
+
+const BackGroundGradient = styled.div`
+  width: 100%;
+  z-index: -1;
+  display: flex;
+  animation: bg-animation 6s infinite alternate;
+  align-items: center;
+  justify-content: center;
+  background-size: 400%;
+  background-image: var(--gradient);
+
+  @keyframes bg-animation {
+    0% {
+      background-position: left;
+    }
+    100% {
+      background-position: right;
+    }
+  }
+`;
 
 const HeroContainer = styled.div`
   width: 58%;
