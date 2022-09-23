@@ -3,11 +3,14 @@ import styled from "styled-components";
 import theme from "../lib/themes";
 import Button from "./button";
 
+
 import Phone from "./phone";
 import PhoneImage from "../assets/images/phone.png";
 
+
 const HeroInfo = () => {
   return (
+ 
     <Container>
       <LabelContainer>
         <TitleContainer>
