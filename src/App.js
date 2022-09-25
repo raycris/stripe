@@ -34,13 +34,13 @@ function App() {
         <Brands />
       </HeroContainer>
 
-      <Grayntainer>
+      <Grayntainer style={{ height: "100%", padding: " 0px  0 820px" }}>
         <HeroContainer>
           <PaymentProducts />
         </HeroContainer>
       </Grayntainer>
 
-      <PrimaryContainer style={{ marginTop: "600px" }}>
+      <PrimaryContainer >
         <DevelopersForDesigned />
       </PrimaryContainer>
 
@@ -101,6 +101,8 @@ const HeroContainer = styled.div`
   transition: opacity 1.8s ease-in 50ms;
   align-items: flex-start;
   flex-direction: column;
+  
+  /* background-color: red; */
 `;
 
 const Container = styled.div`
@@ -120,7 +122,6 @@ const InfoContainer = styled.div`
 
 const PrimaryContainer = styled.div`
   width: 100%;
-  /* margin: 200px 0; */
   display: flex;
   background: ${theme.color.primary};
   align-items: center;
@@ -128,7 +129,6 @@ const PrimaryContainer = styled.div`
 `;
 const Grayntainer = styled.div`
   width: 100%;
-  margin-bottom: 200px;
   display: flex;
   background: ${theme.color.backgroundGray};
   align-items: center;

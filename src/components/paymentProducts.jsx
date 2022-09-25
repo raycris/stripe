@@ -20,17 +20,17 @@ const PaymentProducts = () => {
           We bring together everything that’s required to build websites and
           apps that accept payments and send payouts globally. Stripe’s products
           power payments for
-          <DescriptionLink>online and in-person retailers</DescriptionLink>,
-          <DescriptionLink>subscriptions businesses</DescriptionLink>,
-          <DescriptionLink>software platforms and marketplaces</DescriptionLink>
+          <DescriptionLink> online and in-person retailers</DescriptionLink>,
+          <DescriptionLink> subscriptions businesses</DescriptionLink>,
+          <DescriptionLink> software platforms and marketplaces</DescriptionLink>
           , and everything in between.
         </Description>
         <Description>
-          We also help companies <DescriptionLink>beat fraud</DescriptionLink> ,
-          <DescriptionLink>send invoices</DescriptionLink> ,
-          <DescriptionLink>issue virtual and physical cards</DescriptionLink> ,
-          <DescriptionLink>get financing</DescriptionLink> ,
-          <DescriptionLink>manage business spend</DescriptionLink>, and much
+          We also help companies <DescriptionLink>beat fraud</DescriptionLink>,
+          <DescriptionLink> send invoices</DescriptionLink>,
+          <DescriptionLink> issue virtual and physical cards</DescriptionLink>,
+          <DescriptionLink> get financing</DescriptionLink>,
+          <DescriptionLink> manage business spend</DescriptionLink>, and much
           more.
         </Description>
       </DescriptionContainer>
@@ -38,7 +38,7 @@ const PaymentProducts = () => {
         <Button
           title="Start with payment"
           opacity={false}
-            hoverColor={theme.color.primary}
+          hoverColor={theme.color.primary}
           backgroundColor={theme.color.purpure}
           colorLabel={theme.color.white}
         />
@@ -48,13 +48,13 @@ const PaymentProducts = () => {
         <div>
           <CreditCard />
         </div>
-        <div >
+        <div>
           <PayMethodChart />
         </div>
         <div>
           <PaymentObject />
         </div>
-          <PaymentMethodPhone />
+        <PaymentMethodPhone />
         <PaymentFraudChart />
       </ImageContainer>
     </Container>
@@ -65,6 +65,7 @@ export default PaymentProducts;
 
 const Container = styled.section`
   display: flex;
+  padding: 128px 0 318px;
   flex-direction: column;
 `;
 
@@ -82,11 +83,18 @@ const Title = styled.h1`
 const Description = styled.p`
   color: ${theme.color.primary};
   width: 492px;
+  font-weight: 500;
   font-size: ${theme.fontSize.base};
 `;
 const DescriptionLink = styled.a`
   color: ${theme.color.purpure};
+  cursor: pointer;
+  font-weight: bold;
   font-size: ${theme.fontSize.base};
+
+  &:hover{
+    color: ${theme.color.primary};
+  }
 `;
 const DescriptionContainer = styled.span`
   display: flex;
@@ -103,7 +111,6 @@ const ImageContainer = styled.div`
   display: grid;
   align-items: center;
   grid-column-gap: 4rem;
-  grid-template-rows: 1fr  480px;
+  grid-template-rows: 1fr 480px;
   grid-template-columns: 1fr 500px 1fr;
 `;
-

@@ -111,8 +111,10 @@ const DevelopersForDesigned = () => {
 export default DevelopersForDesigned;
 
 const InfoContainer = styled.div`
-  display: grid;
   height: 100%;
+  display: grid;
+  padding: 318px 0;
+  align-items: center;
   grid-template-columns: 1fr 1fr;
 `;
 

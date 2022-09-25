@@ -94,6 +94,7 @@ export default WhyStripe;
 
 const Container = styled.section`
   display: flex;
+  padding: 318px 0;
   flex-direction: column;
 `;
 

@@ -34,10 +34,10 @@ function Brands() {
 export default Brands;
 
 const Container = styled.picture`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  `;
+  display: grid;
+  padding: 110px 0;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+`;
 
 const ImageBackground = styled.img`
   width: 170px;

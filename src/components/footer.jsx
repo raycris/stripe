@@ -23,7 +23,6 @@ const info = [
       "Elements",
       "Financial Connections",
       "Identity",
-      
     ],
   },
   {
@@ -65,18 +64,20 @@ const info = [
   {
     id: 5,
     title: "",
-    references: ["Invoicing",
-    "Issuing",
-    "Payments",
-    "Payment Links",
-    "Payouts",
-    "Pricing",
-    "Radar",
-    "Revenue Recognition",
-    "Sigma",
-    "Tax",
-    "Terminal",
-    "Treasury",],
+    references: [
+      "Invoicing",
+      "Issuing",
+      "Payments",
+      "Payment Links",
+      "Payouts",
+      "Pricing",
+      "Radar",
+      "Revenue Recognition",
+      "Sigma",
+      "Tax",
+      "Terminal",
+      "Treasury",
+    ],
   },
   {
     id: 6,
@@ -152,23 +153,20 @@ export default Footer;
 
 const Container = styled.footer`
   display: grid;
-  grid-template-columns: auto auto auto auto;
-
   grid-template-rows: 300px 2fr 2fr;
-  /* grid-template-rows: 200px 200px 200px; */
+  grid-template-columns: auto auto auto auto;
 `;
 
 const Title = styled.h1`
   color: ${theme.color.primary};
+  margin: 0 0 8px;
   font-size: ${theme.fontSize.normal};
   font-weight: bold;
-  margin: 0 0 8px;
 `;
 const Subtitle = styled.a`
   color: ${theme.color.primary};
-  font-size: ${theme.fontSize.normal};
   cursor: pointer;
-  
+  font-size: ${theme.fontSize.normal};
 
   &:hover {
     opacity: 0.7;
@@ -193,8 +191,8 @@ const Icon = styled.img`
 `;
 
 const ReferenceContainer = styled.li`
-  display: flex;
-  flex-direction: column;
   margin: 4px 0;
+  display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 `;

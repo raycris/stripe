@@ -55,14 +55,3 @@ const HeaderContainer = styled.span`
   display: flex;
   justify-content: flex-start;
 `;
-
-const Label = styled.p`
-  font-size: 1.8rem;
-  font-weight: bolder;
-`;
-const BallIcon = styled.span`
-  height: 16px;
-  width: 16px;
-  border-radius: 50%;
-  background-color: #ffffff;
-`;

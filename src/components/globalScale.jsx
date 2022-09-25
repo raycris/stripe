@@ -63,6 +63,7 @@ export default GlobalScale;
 const Container = styled.section`
   width: 58%;
   display: flex;
+  padding: 318px 0;
 `;
 const ParentContainer = styled.section`
   display: flex;

@@ -85,6 +85,7 @@ export default ReadyToStarted;
 
 const Container = styled.section`
   display: flex;
+  padding: 128px 0 318px;
   align-items: center;
   justify-content: center;
 `;
@@ -157,7 +158,6 @@ const ButtonContainer = styled.div`
   display: flex;
   margin-top: 18px;
   align-items: center;
-  /* background-color: red; */
 `;
 
 
