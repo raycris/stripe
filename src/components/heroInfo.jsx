@@ -25,17 +25,17 @@ const HeroInfo = () => {
         </DescripContainer>
         <ButtonContainer>
           <Button
+            opacity
             backgroundColor={theme.color.primary}
             colorLabel={theme.color.white}
             hoverColor={theme.color.primary}
-            opacity={true}
             title="Start now"
           />
           <Button
-            backgroundColor={theme.color.white}
+            opacity
+            backgroundColor={theme.color.transparent}
             colorLabel={theme.color.primary}
             hoverColor={theme.color.white}
-            opacity={true}
             title="Contact sales"
           />
         </ButtonContainer>
@@ -49,8 +49,10 @@ export default HeroInfo;
 
 const Container = styled.div`
   display: flex;
+  padding: 116px 0 128px;
   align-items: center;
   justify-content: center;
+  
 `;
 
 const LabelContainer = styled.div`

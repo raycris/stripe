@@ -41,6 +41,7 @@ export default VirtualEvent;
 const Container = styled.div`
   margin: 0 200px;
   display: flex;
+  padding: 128px 0;
   justify-content: center;
 `;
 
