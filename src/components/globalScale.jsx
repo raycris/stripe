@@ -61,9 +61,9 @@ const GlobalScale = () => {
 export default GlobalScale;
 
 const Container = styled.section`
-  width: 58%;
-  display: flex;
+  display: grid;
   padding: 318px 0;
+  grid-template-columns: 810px 1fr;
 `;
 const ParentContainer = styled.section`
   display: flex;

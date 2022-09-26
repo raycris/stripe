@@ -93,9 +93,9 @@ const WhyStripe = () => {
 export default WhyStripe;
 
 const Container = styled.section`
-  display: flex;
+  display: grid;
   padding: 318px 0;
-  flex-direction: column;
+  grid-template-columns: 1fr;
 `;
 
 const Line = styled.span`
