@@ -12,8 +12,8 @@ const VirtualEvent = () => {
   return (
     <Container>
       <InfoContainer>
-        <Subtitle>Why Stripes</Subtitle>
-        <Title>A technology-first approach to payments and finance</Title>
+        <Subtitle>Virtual event</Subtitle>
+        <Title>Watch Sessions on demand</Title>
         <Description>
           Stripe Sessions—our annual conference—is now available to watch on
           demand. Learn more about the future of the internet economy and see
@@ -39,10 +39,10 @@ const VirtualEvent = () => {
 export default VirtualEvent;
 
 const Container = styled.div`
-  margin: 0 200px;
-  display: flex;
+  display: grid;
   padding: 128px 0;
   justify-content: center;
+  grid-template-columns: 410px 1fr;
 `;
 
 const InfoContainer = styled.div`
@@ -58,7 +58,7 @@ const Subtitle = styled.h2`
 
 const Title = styled.h1`
   color: ${theme.color.primary};
-  width: 740px;
+  width: 340px;
   font-size: 3.8rem;
 `;
 
@@ -67,10 +67,11 @@ const Description = styled.div`
   height: 72px;
   padding: 0 14px;
   font-size: ${theme.fontSize.normal};
+  text-align: justify;
 `;
 
 const ButtonContainer = styled.span`
   display: flex;
-  margin-bottom: 50px;
+  margin-top: 40px;
   justify-content: flex-start;
 `;
